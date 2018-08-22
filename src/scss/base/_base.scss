@@ -7,27 +7,22 @@
 }
 
 html {
-  font-size: 100.5%;
-  @media only screen and (max-width: 392px) {
-    font-size: 80%
-  }
+  font-size: 95%;
 }
 
 body {
   position: relative;
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
-  overflow: hidden;
-  background: #673AB7;
-}
-
-.container {
-  position: relative;
-  width: 100vw;
+  background: #E8EAF6;
+  padding: 1.5rem;
   overflow-x: hidden;
+  @media only screen and (max-width: 1024px) {
+    padding: 0;
+  }
 }
 
 ::selection {
-  background-color: $color-primary;
+  // background-color: $color-primary;
   color: $color-white;
 }

@@ -1,0 +1,45 @@
+@mixin linkStyle ($color, $fontWeight, $fontSize) {
+  text-decoration: none;
+  display: inline-block;
+  color: $color;
+  transition: $primary-transition;
+  font-weight: $fontWeight;
+  font-size: $fontSize
+}
+
+@mixin beforAfter ($color) {
+  position: absolute;
+  content: '';
+  border-radius: inherit;
+  display: inline-block;
+  transition: all .7s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  background: $color;
+}
+
+@mixin btnStyling {
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  padding: .5rem 1.5rem;
+  border-radius: 3rem;
+  background: transparent;
+  color: $header-color;
+  outline: none;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  border: 1px solid $header-color;
+  box-shadow: $box-shadow;
+  transition: $primary-transition;
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-.5rem);
+  }
+}
+
+@mixin bounce {
+  animation: bounce .9s linear 1s infinite;
+  &:hover {
+    animation: none;
+  }
+}
