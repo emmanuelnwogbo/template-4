@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100.5%;
+  @media only screen and (max-width: 392px) {
+    font-size: 80%
+  }
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+  background: #673AB7;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
