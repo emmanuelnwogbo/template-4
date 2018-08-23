@@ -70,7 +70,7 @@
     }
   }
   &__skill-letters {
-    width: 20%;
+    width: 50%;
     transform: translateY(-2rem);
   }
   &__skill-numbers {
@@ -83,7 +83,7 @@
 #about {
   &__skill-1 {
     &::before {
-      width: 90%;
+      width: 95%;
       height: 100%;
       left: 0;
       top: 0;

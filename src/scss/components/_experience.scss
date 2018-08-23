@@ -1,0 +1,46 @@
+.experience {
+  background: #fff;
+  &__container {
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+  }
+  &__container-h3 {
+    position: relative;
+    color: rgba(30, 39, 46, 1.0);
+    text-align: left;
+    margin-bottom: 1rem;
+    &::before {
+      @include beforAfter(rgba(128, 142, 155, 1.0));
+      bottom: 0;
+      left: 0;
+      width: 30%;
+      height: 5%;
+    }
+  }
+  &__container-h3letter {
+    display: inline-block;
+    transform: translateY(-.3rem);
+  }
+  &__container-icon {
+    fill: rgba(30, 39, 46, 1.0);
+    height: 2rem;
+    width: 2rem;
+    margin: 0 .5rem;
+  }
+  &__container-content {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__container-education {
+    width: 45%;
+  }
+  &__item {
+    margin: 1rem 0;
+  }
+  &__container-experience {
+    width: 45%;
+  }
+}

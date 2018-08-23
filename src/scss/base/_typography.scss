@@ -7,6 +7,16 @@ body {
 
 h2 {
   font-size: 270%;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 200%;
+  font-weight: 900;
+}
+
+h4 {
+  font-size: 150%;
   font-weight: 700;
 }
 
@@ -61,5 +71,11 @@ h5 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 90%
+  }
+}
+
+.experience {
+  &__itempara {
+    font-size: 110%;
   }
 }
