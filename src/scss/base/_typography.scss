@@ -5,6 +5,16 @@ body {
   color: $color-grey-dark;
 }
 
+h2 {
+  font-size: 270%;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 110%;
+  font-weight: 400;
+}
+
 .container {
   &__sidenav-link,
   &__sidenav-link:link,
@@ -33,5 +43,23 @@ body {
   }
   &__Intro-mouse {
     font-size: 80%;
+  }
+}
+
+.about {
+  &__bio {
+    font-size: 118%;
+    letter-spacing: 1.5px;
+  }
+  &__btn,
+  &__btn:link,
+  &__btn:visited,
+  &__btn:active {
+    font-size: 70%;
+  }
+  &__skill {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 90%
   }
 }
