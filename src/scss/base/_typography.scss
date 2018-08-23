@@ -79,3 +79,15 @@ h5 {
     font-size: 110%;
   }
 }
+
+.services {
+  &__card-h4 {
+    font-size: 126%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  &__card-para {
+    font-weight: 400;
+    font-size: 110%;
+  }
+}

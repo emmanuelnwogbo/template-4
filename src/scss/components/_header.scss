@@ -44,7 +44,8 @@
     }
     &:hover::before {}
     &:hover::after {
-      width: 100%
+      width: 100%;
+      background: rgba(255, 143, 0, 1.0);
     }
     &::before {
       @include beforAfter($header-color);

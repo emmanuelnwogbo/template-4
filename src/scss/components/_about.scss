@@ -41,6 +41,7 @@
   &__btn:visited,
   &__btn:active {
     @include btnStyling;
+    color: rgba(255, 143, 0, 1.0);
     padding: .7rem 1rem;
     background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .9));
     border: none;
@@ -66,7 +67,7 @@
     margin: 2rem 0;
     background: rgba(128, 142, 155, 1.0);
     &::before {
-      @include beforAfter (rgba(30, 39, 46, 1.0))
+      @include beforAfter (rgba(255, 143, 0, 1.0))
     }
   }
   &__skill-letters {
