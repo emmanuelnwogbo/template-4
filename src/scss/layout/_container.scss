@@ -1,8 +1,7 @@
 .container {
   position: relative;
   overflow-x: hidden;
-  min-height: 200vh;
-  background: #34495e;
+  background: rgba(255, 255, 255, 1.0);
   &__sidenav-check {
     position: absolute;
     top: 0;
