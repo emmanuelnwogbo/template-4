@@ -36,15 +36,21 @@
   &__paragraph {
     margin: 1rem 0;
   }
+  &__btns {
+    display: flex;
+    justify-content: baseline;
+  }
   &__btn,
   &__btn:link,
   &__btn:visited,
   &__btn:active {
     @include btnStyling;
     color: rgba(255, 143, 0, 1.0);
-    padding: .7rem 1rem;
+    padding: .7rem .1rem;
     background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .9));
     border: none;
+    margin-right: 1rem;
+    width: 25%;
     &:hover {
       cursor: pointer;
       transform: translateY(-.2rem);

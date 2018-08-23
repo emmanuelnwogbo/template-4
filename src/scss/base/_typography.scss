@@ -21,7 +21,7 @@ h4 {
 }
 
 h5 {
-  font-size: 110%;
+  font-size: 115%;
   font-weight: 400;
 }
 
@@ -89,5 +89,37 @@ h5 {
   &__card-para {
     font-weight: 400;
     font-size: 110%;
+  }
+}
+
+.blog {
+  &__card-details {
+    font-size: 80%;
+    @media only screen and (max-width: 1024px) {
+      font-size: 120%;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 100%;
+    }
+  }
+  &__card-preview {
+    font-size: 100%;
+    @media only screen and (max-width: 1024px) {
+      font-size: 130%
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 100%;
+    }
+  }
+  &__card-btn,
+  &__card-btn:link,
+  &__card-btn:visited,
+  &__card-btn:active {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 85%;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
   }
 }
