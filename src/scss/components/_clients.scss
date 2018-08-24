@@ -1,0 +1,99 @@
+.clients {
+  background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .8)), url(.././imgs/blog2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: rgba(255, 143, 0, 1.0);
+  padding: 2rem 0;
+  &__container {
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+  }
+  &__container-h2 {
+    position: relative;
+    text-align: center;
+    width: 20%;
+    margin: 0 auto;
+    &::before {
+      @include beforAfter(rgba(128, 142, 155, 1.0));
+      bottom: 10%;
+      left: 25%;
+      width: 50%;
+      height: 3%;
+    }
+  }
+  &__container-sub {
+    text-align: center;
+    width: 60%;
+    margin: 0rem auto;
+    color: rgba(255, 255, 255, 1.0);
+  }
+  &__container-content {
+    overflow-x: hidden;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: baseline;
+    padding: 3rem 0
+  }
+  &__card {
+    background: transparent;
+    padding: 0rem 1rem;
+    flex-basis: 30%;
+    flex-shrink: 0;
+    text-align: center;
+    color: #1e272e;
+    border: 1px solid rgba(255, 143, 0, 1.0);
+    box-shadow: $box-shadow;
+    border-radius: .2rem;
+    margin: 1rem 0;
+    margin-right: 2rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__card-figure {
+    overflow: hidden;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    transform: translateY(-3rem);
+  }
+  &__card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block
+  }
+  &__card-name {
+    color: rgba(255, 143, 0, 1.0);
+    transform: translateY(-2rem);
+    margin: .5rem 0;
+  }
+  &__card-para {
+    color: rgba(255, 255, 255, 1.0);
+    transform: translateY(-2rem);
+  }
+  &__btns-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  &__btn-listitem:first-child {
+    background: rgb(196, 113, 4);
+    border: 3px solid rgb(196, 113, 4);
+  }
+  &__btn-listitem {
+    width: 1rem;
+    height: 1rem;
+    border: 3px solid rgb(196, 113, 4);
+    border-radius: 50%;
+    background: transparent;
+    margin: 1rem;
+    display: inline-block;
+    transition: $primary-transition;
+    cursor: pointer;
+  }
+}

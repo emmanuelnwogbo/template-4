@@ -92,6 +92,12 @@ h5 {
   }
 }
 
+.clients {
+  &__card-para {
+    letter-spacing: 2px;
+  }
+}
+
 .blog {
   &__card-details {
     font-size: 80%;
