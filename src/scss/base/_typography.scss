@@ -129,3 +129,45 @@ h5 {
     text-transform: uppercase;
   }
 }
+
+.contact {
+  &__container-h2 {
+    text-align: center;
+  }
+  &__address {
+    text-align: center;
+  }
+  &__address-h4 {
+    font-weight: 900;
+    font-size: 200%;
+    text-decoration: underline;
+  }
+  &__address-item {
+    &>p {
+      font-weight: 700;
+      font-size: 110%;
+    }
+  }
+  &__form-input {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    &::-webkit-input-placeholder {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+  }
+  &__form-textarea {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    &::-webkit-input-placeholder {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+  }
+  &__form-btn,
+  &__form-btn:link,
+  &__form-btn:visited,
+  &__form-btn:active {
+    font-weight: 900;
+  }
+}
