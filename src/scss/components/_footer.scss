@@ -1,0 +1,23 @@
+.footer {
+  color: $color-primary;
+  z-index: 7000;
+  width: 100%;
+  transform: translateY(-5rem);
+  &__container {
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+  }
+  &__icons {
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  &-icon {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: 0 1.2rem;
+    fill: $color-primary;
+  }
+}

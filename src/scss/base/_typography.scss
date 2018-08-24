@@ -171,3 +171,18 @@ h5 {
     font-weight: 900;
   }
 }
+
+.footer {
+  &__container {
+    text-align: center;
+  }
+  &__container-h4 {
+    font-size: 180%;
+    letter-spacing: 1px;
+  }
+  &-licence {
+    font-size: 120%;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+}
