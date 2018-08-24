@@ -76,4 +76,87 @@
       transform: translateY(-.2rem);
     }
   }
+  &__newsletter {
+    padding: 1rem 0;
+    background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .9)), url(.././imgs/desktop3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    color: $header-color;
+  }
+  &__newsletter-content {
+    color: $color-primary;
+  }
+  &__newsletter-h2 {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    &::before {
+      @include beforAfter(rgba(128, 142, 155, 1.0));
+      bottom: 10%;
+      left: 25%;
+      width: 50%;
+      height: 3%;
+    }
+  }
+  &__newsletter-sub {
+    text-align: center;
+    width: 50%;
+    margin: 0rem auto;
+    color: rgba(255, 255, 255, 1.0);
+  }
+  &__newsletter-form {
+    margin: 1rem auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__newsletter-formgroup {
+    width: 100%;
+    margin: 1.5rem auto;
+    border-radius: 54px;
+  }
+  &__newsletter-forminput {
+    height: 3.5rem;
+    padding: .8rem;
+    width: 100%;
+    font-family: inherit;
+    color: $color-black;
+    border-radius: 54px;
+    background-color: rgba(255, 143, 0, 1);
+    border: none;
+    border-bottom: 3px solid transparent;
+    display: block;
+    transition: all .3s;
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, .1);
+      border-bottom: 3px solid $color-black;
+    }
+    &:focus:invalid {
+      border-bottom: 3px solid #eb4d4b;
+    }
+    &::-webkit-input-placeholder {
+      color: $color-black;
+    }
+  }
+  &__newletter-btn,
+  &__newletter-btn:link,
+  &__newletter-btn:visited,
+  &__newletter-btn:active {
+    align-self: flex-end;
+    @include btnStyling;
+    color: rgba(255, 143, 0, 1.0);
+    padding: .9rem .1rem;
+    background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .9));
+    border: none;
+    width: 20%;
+    transform: translateY(-5rem);
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-5.3rem)
+    }
+  }
 }
