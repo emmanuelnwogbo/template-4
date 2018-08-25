@@ -9,6 +9,12 @@
     position: relative;
     margin: 0 auto;
     width: 75%;
+    @media only screen and (max-width: 998px) {
+      width: 80%;
+    }
+    @media only screen and (max-width: 800px) {
+      width: 80%;
+    }
   }
   &__container-h2 {
     position: relative;
@@ -27,6 +33,9 @@
     width: 60%;
     margin: 0rem auto;
     color: rgba(255, 255, 255, 1.0);
+    @media only screen and (max-width: 998px) {
+      width: 100%;
+    }
   }
   &__container-content {
     overflow-x: hidden;
@@ -51,6 +60,12 @@
     &:hover {
       cursor: pointer;
     }
+    @media only screen and (max-width: 998px) {
+      flex-basis: 48%;
+    }
+    @media only screen and (max-width: 800px) {
+      flex-basis: 100%;
+    }
   }
   &__card-figure {
     overflow: hidden;
@@ -59,6 +74,11 @@
     border-radius: 50%;
     margin: 0 auto;
     transform: translateY(-3rem);
+    @media only screen and (max-width: 998px) {
+      height: 9rem;
+      width: 9rem;
+      transform: translateY(-4.5rem);
+    }
   }
   &__card-img {
     width: 100%;
@@ -70,10 +90,16 @@
     color: rgba(255, 143, 0, 1.0);
     transform: translateY(-2rem);
     margin: .5rem 0;
+    @media only screen and (max-width: 998px) {
+      transform: translateY(-4rem);
+    }
   }
   &__card-para {
     color: rgba(255, 255, 255, 1.0);
     transform: translateY(-2rem);
+    @media only screen and (max-width: 998px) {
+      transform: translateY(-4rem);
+    }
   }
   &__btns-list {
     display: flex;
@@ -94,5 +120,9 @@
     display: inline-block;
     transition: $primary-transition;
     cursor: pointer;
+    @media only screen and (max-width: 998px) {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 }

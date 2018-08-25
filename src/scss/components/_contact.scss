@@ -31,14 +31,19 @@
     margin-top: 1.5rem;
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+    }
   }
   &__address {
     width: 36%;
     padding: 1rem;
     color: rgba(30, 39, 46, 1.0);
     height: 100%;
-    border: solid;
     z-index: 7000;
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+    }
   }
   &__address-item {
     margin: 1rem 0;
@@ -53,6 +58,9 @@
     width: 64%;
     padding: .5rem;
     z-index: 7000;
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+    }
   }
   &__form-group {
     margin-bottom: 1.5rem;
@@ -60,6 +68,9 @@
     width: 100%;
     @media only screen and (max-width: 1024px) {
       width: 80%;
+    }
+    @media only screen and (max-width: 998px) {
+      width: 100%
     }
     @media only screen and (max-width: 600px) {
       width: 95%;
@@ -100,6 +111,9 @@
     }
     &::-webkit-input-placeholder {
       color: $color-black;
+    }
+    @media only screen and (max-width: 800px) {
+      height: 5rem;
     }
   }
   &__form-textarea {

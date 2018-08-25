@@ -9,6 +9,12 @@ h2 {
   font-size: 270%;
   font-weight: 900;
   text-align: center;
+  @media only screen and (max-width: 998px) {
+    font-size: 400%;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 461%
+  }
 }
 
 h3 {
@@ -19,11 +25,20 @@ h3 {
 h4 {
   font-size: 150%;
   font-weight: 700;
+  @media only screen and (max-width: 998px) {
+    font-size: 218%;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 275%
+  }
 }
 
 h5 {
   font-size: 115%;
   font-weight: 400;
+  @media only screen and (max-width: 998px) {
+    font-size: 200%;
+  }
 }
 
 .container {
@@ -35,6 +50,9 @@ h5 {
     font-size: 186%;
     text-transform: uppercase;
     text-decoration: none;
+    @media only screen and (max-width: 900px) {
+      font-size: 265%;
+    }
   }
 }
 
@@ -42,6 +60,38 @@ h5 {
   &__title {
     font-size: 200%;
     font-weight: 700;
+    @media only screen and (max-width: 998px) {
+      font-size: 350%;
+    }
+  }
+  &__intro {
+    @media only screen and (max-width: 1400px) {
+      font-size: 137%;
+    }
+    @media only screen and (max-width: 1291px) {
+      font-size: 137%;
+    }
+    @media only screen and (max-width: 1108px) {
+      font-size: 170%;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 136%;
+    }
+    @media only screen and (max-width: 725px) {
+      font-size: 120%;
+    }
+    @media only screen and (max-width: 555px) {
+      font-size: 152%;
+    }
+    @media only screen and (max-width: 470px) {
+      font-size: 117%;
+    }
+    @media only screen and (max-width: 417px) {
+      font-size: 110%;
+    }
+    @media only screen and (max-width: 395px) {
+      font-size: 90%;
+    }
   }
   &__intro-name {
     letter-spacing: .1rem;
@@ -62,6 +112,12 @@ h5 {
     font-size: 118%;
     letter-spacing: 1.5px;
   }
+  &__paragraph {
+    @media only screen and (max-width: 998px) {
+      font-size: 120%;
+      letter-spacing: 1px;
+    }
+  }
   &__btn,
   &__btn:link,
   &__btn:visited,
@@ -71,13 +127,19 @@ h5 {
   &__skill {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 90%
+    font-size: 90%;
+    @media only screen and (max-width: 998px) {
+      font-size: 139%;
+    }
   }
 }
 
 .experience {
   &__itempara {
     font-size: 110%;
+    @media only screen and (max-width: 998px) {
+      font-size: 200%;
+    }
   }
 }
 
@@ -86,16 +148,34 @@ h5 {
     font-size: 126%;
     text-transform: uppercase;
     letter-spacing: 1px;
+    @media only screen and (max-width: 998px) {
+      font-size: 200%;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 220%
+    }
   }
   &__card-para {
     font-weight: 400;
     font-size: 110%;
+    @media only screen and (max-width: 998px) {
+      font-size: 200%;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 250%
+    }
   }
 }
 
 .clients {
   &__card-para {
     letter-spacing: 2px;
+    @media only screen and (max-width: 998px) {
+      font-size: 170%;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 230%
+    }
   }
 }
 
@@ -105,8 +185,8 @@ h5 {
     @media only screen and (max-width: 1024px) {
       font-size: 120%;
     }
-    @media only screen and (max-width: 800px) {
-      font-size: 100%;
+    @media only screen and (max-width: 998px) {
+      font-size: 160%;
     }
   }
   &__card-preview {
@@ -114,8 +194,11 @@ h5 {
     @media only screen and (max-width: 1024px) {
       font-size: 130%
     }
+    @media only screen and (max-width: 998px) {
+      font-size: 210%;
+    }
     @media only screen and (max-width: 800px) {
-      font-size: 100%;
+      font-size: 250%
     }
   }
   &__card-btn,
@@ -128,6 +211,9 @@ h5 {
     font-size: 85%;
     letter-spacing: .1rem;
     text-transform: uppercase;
+    @media only screen and (max-width: 998px) {
+      font-size: 200%;
+    }
   }
   &__newsletter-forminput {
     font-size: 1.2rem;
@@ -146,18 +232,30 @@ h5 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
+    @media only screen and (max-width: 998px) {
+      font-size: 100%;
+    }
+    @media only screen and (max-width: 415px) {
+      font-size: 170%;
+    }
   }
   &__card-category {
     text-align: center;
     font-weight: 400;
     font-size: 110%;
     letter-spacing: 1px;
+    @media only screen and (max-width: 998px) {
+      font-size: 180%;
+    }
   }
   &__card-name {
     text-align: center;
     font-weight: 700;
     font-size: 150%;
     letter-spacing: 2px;
+    @media only screen and (max-width: 998px) {
+      font-size: 200%;
+    }
   }
 }
 
@@ -167,10 +265,14 @@ h5 {
   }
   &__address {
     text-align: center;
+    @media only screen and (max-width: 998px) {
+      font-size: 140%;
+    }
   }
   &__address-h4 {
     font-weight: 900;
-    font-size: 200%; //text-decoration: underline;
+    font-size: 200%;
+    text-decoration: underline;
   }
   &__address-item {
     &>p {
@@ -209,10 +311,19 @@ h5 {
   &__container-h4 {
     font-size: 180%;
     letter-spacing: 1px;
+    @media only screen and (max-width: 998px) {
+      font-size: 250%;
+    }
   }
   &-licence {
     font-size: 120%;
     font-weight: 700;
     letter-spacing: 3px;
+    @media only screen and (max-width: 998px) {
+      font-size: 170%;
+    }
+    @media only screen and (max-width: 555px) {
+      font-size: 120%;
+    }
   }
 }

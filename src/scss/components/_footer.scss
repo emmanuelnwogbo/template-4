@@ -19,5 +19,14 @@
     width: 1.2rem;
     margin: 0 1.2rem;
     fill: $color-primary;
+    transition: $primary-transition;
+    &:hover {
+      transform: translateY(-.3rem) translateX(.3rem) scale(1.5);
+      cursor: pointer;
+    }
+    @media only screen and (max-width: 998px) {
+      height: 2rem;
+      width: 2rem;
+    }
   }
 }

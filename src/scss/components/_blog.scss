@@ -15,6 +15,9 @@
     width: 60%;
     margin: 0rem auto;
     color: rgba(128, 142, 155, 1.0);
+    @media only screen and (max-width: 998px) {
+      width: 100%
+    }
   }
   &__container-content {
     width: 100%;
@@ -22,7 +25,10 @@
     display: flex;
     flex-wrap: wrap;
     align-content: baseline;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    @media only screen and (max-width: 998px) {
+      justify-content: space-between;
+    }
   }
   &__card {
     background: #fff;
@@ -35,16 +41,41 @@
     &:hover {
       cursor: pointer;
     }
+    @media only screen and (max-width: 998px) {
+      flex-basis: 48%;
+      margin: 1.5rem 0;
+    }
+    @media only screen and (max-width: 800px) {
+      flex-basis: 100%;
+    }
   }
   &__card-figure {
     overflow: hidden;
     height: 30vh;
     width: 100%;
+    @media only screen and (max-width: 1600px) {
+      height: 25vh;
+    }
+    @media only screen and (max-width: 1400px) {
+      height: 20vh;
+    }
+    @media only screen and (max-width: 1150px) {
+      height: 15vh;
+    }
+    @media only screen and (max-width: 998px) {
+      height: 23vh;
+    }
+    @media only screen and (max-width: 800px) {
+      height: 30vh;
+    }
   }
   &__card-text {
     padding: 1.5rem;
     &>* {
-      margin: .3rem 0
+      margin: .3rem 0;
+      @media only screen and (max-width: 998px) {
+        margin: .4rem 0;
+      }
     }
   }
   &__card-name {
@@ -75,6 +106,9 @@
       cursor: pointer;
       transform: translateY(-.2rem);
     }
+    @media only screen and (max-width: 998px) {
+      padding: .8rem 2rem;
+    }
   }
   &__newsletter {
     padding: 1rem 0;
@@ -93,6 +127,9 @@
     text-align: center;
     width: 50%;
     margin: 0 auto;
+    @media only screen and (max-width: 800px) {
+      width: 100%
+    }
     &::before {
       @include beforAfter(rgba(128, 142, 155, 1.0));
       bottom: 10%;
@@ -106,12 +143,18 @@
     width: 50%;
     margin: 0rem auto;
     color: rgba(255, 255, 255, 1.0);
+    @media only screen and (max-width: 998px) {
+      width: 75%;
+    }
   }
   &__newsletter-form {
     margin: 1rem auto;
     width: 50%;
     display: flex;
     flex-direction: column;
+    @media only screen and (max-width: 400px) {
+      width: 70%;
+    }
   }
   &__newsletter-formgroup {
     width: 100%;
