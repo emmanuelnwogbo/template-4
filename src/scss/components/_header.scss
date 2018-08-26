@@ -119,9 +119,13 @@
   }
   &__intro-name {
     text-align: center;
+    transition: $primary-transition;
+    animation: moveInLeft .9s linear;
   }
   &__intro-about {
     text-align: center;
+    transition: $primary-transition;
+    animation: moveInRight .9s linear;
   }
   &__intro-socials {
     display: flex;
