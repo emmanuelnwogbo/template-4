@@ -27,6 +27,7 @@
     width: 46%;
     list-style: none;
     justify-content: space-between;
+    animation: fadeIn .9s linear;
     @media only screen and (max-width: 1024px) {
       display: none;
     }
@@ -66,7 +67,7 @@
   &__list-link:link,
   &__list-link:visited,
   &__list-link:active {
-    @include linkStyle($color-header-color, 700, 90%)
+    @include linkStyle($color-header-color, 700, 90%);
   }
   &__intro {
     margin: 13rem auto;
@@ -116,6 +117,7 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    animation: fadeIn .9s linear;
   }
   &__intro-name {
     text-align: center;
@@ -133,6 +135,7 @@
     width: 50%;
     margin: 0 auto;
     justify-content: center;
+    animation: fadeIn .9s linear;
   }
   &__intro-icon {
     fill: $color-header-color;
@@ -157,6 +160,7 @@
   }
   &__intro-btn {
     margin: 0 auto;
+    animation: fadeIn .9s linear;
     @include btnStyling;
   }
   &__intro-mouse {
@@ -172,5 +176,6 @@
     text-align: center;
     color: $color-header-color;
     box-shadow: $box-shadow;
+    animation: fadeIn .9s linear;
   }
 }
