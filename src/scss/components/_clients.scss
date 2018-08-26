@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: rgba(255, 143, 0, 1.0);
+  color: $color-primary;
   padding: 2rem 0;
   &__container {
     position: relative;
@@ -21,7 +21,7 @@
     width: 20%;
     margin: 0 auto;
     &::before {
-      @include beforAfter(rgba(128, 142, 155, 1.0));
+      @include beforAfter($color-grey-sub);
       bottom: 10%;
       left: 25%;
       width: 50%;
@@ -32,7 +32,7 @@
     text-align: center;
     width: 60%;
     margin: 0rem auto;
-    color: rgba(255, 255, 255, 1.0);
+    color: $color-white;
     @media only screen and (max-width: 998px) {
       width: 100%;
     }
@@ -51,8 +51,7 @@
     flex-basis: 30%;
     flex-shrink: 0;
     text-align: center;
-    color: #1e272e;
-    border: 1px solid rgba(255, 143, 0, 1.0);
+    border: 1px solid $color-primary;
     box-shadow: $box-shadow;
     border-radius: .2rem;
     margin: 1rem 0;
@@ -87,7 +86,7 @@
     display: block
   }
   &__card-name {
-    color: rgba(255, 143, 0, 1.0);
+    color: $color-primary;
     transform: translateY(-2rem);
     margin: .5rem 0;
     @media only screen and (max-width: 998px) {
@@ -95,7 +94,7 @@
     }
   }
   &__card-para {
-    color: rgba(255, 255, 255, 1.0);
+    color: $color-white;
     transform: translateY(-2rem);
     @media only screen and (max-width: 998px) {
       transform: translateY(-4rem);
@@ -107,13 +106,13 @@
     list-style: none;
   }
   &__btn-listitem:first-child {
-    background: rgb(196, 113, 4);
-    border: 3px solid rgb(196, 113, 4);
+    background: $color-primary;
+    border: 3px solid $color-primary;
   }
   &__btn-listitem {
     width: 1rem;
     height: 1rem;
-    border: 3px solid rgb(196, 113, 4);
+    border: 3px solid $color-primary;
     border-radius: 50%;
     background: transparent;
     margin: 1rem;

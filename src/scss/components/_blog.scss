@@ -1,5 +1,5 @@
 .blog {
-  background: rgba(255, 255, 255, 1.0);
+  background: $color-white;
   &__container {
     position: relative;
     margin: 0 auto;
@@ -8,13 +8,13 @@
   }
   &__container-h2 {
     text-align: center;
-    color: rgba(30, 39, 46, 1.0);
+    color: $color-black-h2;
   }
   &__container-sub {
     text-align: center;
     width: 60%;
     margin: 0rem auto;
-    color: rgba(128, 142, 155, 1.0);
+    color: $color-grey-sub;
     @media only screen and (max-width: 998px) {
       width: 100%
     }
@@ -31,10 +31,10 @@
     }
   }
   &__card {
-    background: #fff;
+    background: $color-white;
     flex-basis: 30%;
     text-align: left;
-    color: #1e272e;
+    color: $color-blog-card;
     box-shadow: $box-shadow;
     border-radius: .2rem;
     margin: 1rem 0;
@@ -79,10 +79,10 @@
     }
   }
   &__card-name {
-    color: rgba(255, 143, 0, 1.0);
+    color: $color-primary;
   }
   &__card-date {
-    color: rgba(255, 143, 0, 1.0);
+    color: $color-primary;
   }
   &__card-img {
     width: 100%;
@@ -95,9 +95,9 @@
   &__card-btn:visited,
   &__card-btn:active {
     padding: .4rem 1.3rem;
-    color: rgba(255, 143, 0, 1.0);
+    color: $color-primary;
     border-radius: .2rem;
-    background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .9));
+    background: $color-btn-black;
     transition: $primary-transition;
     box-shadow: $box-shadow;
     border: none;
@@ -117,7 +117,7 @@
     background-position: center;
     background-attachment: fixed;
     overflow: hidden;
-    color: $header-color;
+    color: $color-header-color;
   }
   &__newsletter-content {
     color: $color-primary;
@@ -131,7 +131,7 @@
       width: 100%
     }
     &::before {
-      @include beforAfter(rgba(128, 142, 155, 1.0));
+      @include beforAfter($color-grey-sub);
       bottom: 10%;
       left: 25%;
       width: 50%;
@@ -142,7 +142,7 @@
     text-align: center;
     width: 50%;
     margin: 0rem auto;
-    color: rgba(255, 255, 255, 1.0);
+    color: $color-white;
     @media only screen and (max-width: 998px) {
       width: 75%;
     }
@@ -168,7 +168,7 @@
     font-family: inherit;
     color: $color-black;
     border-radius: 54px;
-    background-color: rgba(255, 143, 0, 1);
+    background-color: $color-primary;
     border: none;
     border-bottom: 3px solid transparent;
     display: block;
@@ -179,7 +179,7 @@
       border-bottom: 3px solid $color-black;
     }
     &:focus:invalid {
-      border-bottom: 3px solid #eb4d4b;
+      border-bottom: 3px solid $color-error;
     }
     &::-webkit-input-placeholder {
       color: $color-black;
@@ -191,9 +191,9 @@
   &__newletter-btn:active {
     align-self: flex-end;
     @include btnStyling;
-    color: rgba(255, 143, 0, 1.0);
+    color: $color-primary;
     padding: .9rem .1rem;
-    background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .9));
+    background: $color-btn-black;
     border: none;
     width: 20%;
     transform: translateY(-5rem);

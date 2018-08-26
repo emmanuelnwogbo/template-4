@@ -1,5 +1,5 @@
 .about {
-  background: #fff;
+  background: $color-white;
   &__container {
     position: relative;
     margin: 0 auto;
@@ -8,13 +8,13 @@
   }
   &__container-h2 {
     text-align: center;
-    color: rgba(30, 39, 46, 1.0)
+    color: $color-black-h2
   }
   &__container-sub {
     text-align: center;
     width: 60%;
     margin: 0rem auto;
-    color: rgba(128, 142, 155, 1.0);
+    color: $color-grey-sub;
     @media only screen and (max-width: 998px) {
       width: 100%;
     }
@@ -54,9 +54,9 @@
   &__btn:visited,
   &__btn:active {
     @include btnStyling;
-    color: rgba(255, 143, 0, 1.0);
+    color: $color-primary;
     padding: .7rem .1rem;
-    background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .9));
+    background: $color-btn-black;
     border: none;
     margin-right: 1rem;
     width: 25%;
@@ -89,9 +89,9 @@
     justify-content: space-between;
     color: #000000;
     margin: 2rem 0;
-    background: rgba(128, 142, 155, 1.0);
+    background: $color-grey-sub;
     &::before {
-      @include beforAfter (rgba(255, 143, 0, 1.0))
+      @include beforAfter ($color-primary);
     }
   }
   &__skill-letters {

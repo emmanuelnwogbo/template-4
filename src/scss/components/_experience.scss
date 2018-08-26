@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: rgba(255, 143, 0, 1.0);
+  color: $color-primary;
   padding: 2rem 0;
   &__container {
     position: relative;
@@ -12,11 +12,11 @@
   }
   &__container-h3 {
     position: relative;
-    color: #fff;
+    color: $color-white;
     text-align: left;
     margin-bottom: 1rem;
     &::before {
-      @include beforAfter(rgba(128, 142, 155, 1.0));
+      @include beforAfter($color-grey-sub);
       bottom: 0;
       left: 0;
       width: 30%;
@@ -28,7 +28,7 @@
     transform: translateY(-.3rem);
   }
   &__container-icon {
-    fill: #fff;
+    fill: $color-white;
     height: 2rem;
     width: 2rem;
     margin: 0 .5rem;

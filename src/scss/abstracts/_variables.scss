@@ -1,10 +1,19 @@
 //colors
 $color-white: #fff;
+$color-white-2: #f7f7f7;
 $color-black: #000;
 $color-grey-light-1: #c7ecee;
 $color-grey-dark: #2f3542;
-$header-color: #ddd;
+$color-header-color: #ddd;
+$color-btn-black: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .9));
 $color-primary: rgba(255, 143, 0, 1.0);
+$color-black-h2: rgba(30, 39, 46, 1.0);
+$color-sidenav: rgba(19, 20, 20, 0.9);
+$color-grey-sub: rgba(128, 142, 155, 1.0);
+$color-service-card-title: #1e272e;
+$color-error: #eb4d4b;
+$color-blog-card: #1e272e;
+$color-portfolio-card-pseudoelement: linear-gradient(to right bottom, rgba(19, 20, 20, .9), rgba(19, 20, 20, .9));
 //others
 $primary-transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
 $sec-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);

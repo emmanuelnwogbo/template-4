@@ -5,7 +5,7 @@
   background-position: center;
   background-attachment: fixed;
   overflow: hidden;
-  color: $header-color;
+  color: $color-header-color;
   &__container {
     position: relative;
     margin: 0 auto;
@@ -45,17 +45,17 @@
     &:hover::before {}
     &:hover::after {
       width: 100%;
-      background: rgba(255, 143, 0, 1.0);
+      background: $color-primary;
     }
     &::before {
-      @include beforAfter($header-color);
+      @include beforAfter($color-header-color);
       bottom: 50%;
       right: 0%;
       width: 0%;
       height: 2%;
     }
     &::after {
-      @include beforAfter($header-color);
+      @include beforAfter($color-header-color);
       bottom: 25%;
       left: 0%;
       width: 10%;
@@ -66,7 +66,7 @@
   &__list-link:link,
   &__list-link:visited,
   &__list-link:active {
-    @include linkStyle($header-color, 700, 90%)
+    @include linkStyle($color-header-color, 700, 90%)
   }
   &__intro {
     margin: 13rem auto;
@@ -131,7 +131,7 @@
     justify-content: center;
   }
   &__intro-icon {
-    fill: $header-color;
+    fill: $color-header-color;
     height: 1rem;
     width: 1rem;
     margin: 0 .9rem;
@@ -163,10 +163,10 @@
     text-decoration: none;
     padding: .5rem .5rem;
     background: transparent;
-    border: 3px solid $header-color;
+    border: 3px solid $color-header-color;
     border-radius: .9rem;
     text-align: center;
-    color: $header-color;
+    color: $color-header-color;
     box-shadow: $box-shadow;
   }
 }
