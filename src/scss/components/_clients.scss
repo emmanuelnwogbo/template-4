@@ -37,13 +37,16 @@
       width: 100%;
     }
   }
-  &__container-content {
+  &__cards-wrapper {
     overflow-x: hidden;
+  }
+  &__container-content {
     margin-top: 1rem;
     display: flex;
     flex-wrap: nowrap;
     align-content: baseline;
-    padding: 3rem 0
+    padding: 3rem 0;
+    transition: $sec-transition;
   }
   &__card {
     background: transparent;

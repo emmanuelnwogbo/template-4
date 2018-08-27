@@ -27,7 +27,7 @@
     width: 46%;
     list-style: none;
     justify-content: space-between;
-    animation: fadeIn .9s linear;
+    animation: fadeIn 1s linear;
     @media only screen and (max-width: 1024px) {
       display: none;
     }
@@ -117,7 +117,7 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    animation: fadeIn .9s linear;
+    animation: fadeIn 1s linear;
   }
   &__intro-name {
     text-align: center;
@@ -135,7 +135,7 @@
     width: 50%;
     margin: 0 auto;
     justify-content: center;
-    animation: fadeIn .9s linear;
+    animation: fadeIn 1s linear;
   }
   &__intro-icon {
     fill: $color-header-color;
