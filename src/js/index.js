@@ -1,62 +1,60 @@
 import '../scss/main.scss';
 import Slider from './models/slider';
 import Switch from './models/switch';
-import img from '../imgs/project0.jpg';
+import SideNav from './models/sideNav';
 
-const container = document.getElementById('container');
-const sideNavCheck = document.getElementById('container__sidenav-check');
-const sideNavBtn = document.getElementById('container__sidenav-btndiv');
+import img1 from '../imgs/project0.jpg';
+import img2 from '../imgs/project1.jpg';
+import img3 from '../imgs/project2.jpg';
+import img4 from '../imgs/project3.jpg';
+import img5 from '../imgs/project4.jpg';
+import img6 from '../imgs/project5.jpg';
+import img7 from '../imgs/project6.jpg';
 
-sideNavBtn.addEventListener('click', function () {
-  sideNavCheck.checked = true;
-})
-
-container.addEventListener('click', function () {
-  sideNavCheck.checked = false;
-})
+SideNav();
 
 const clientsSlider = new Slider('clients__content', 96);
 clientsSlider.initialize();
 
 const portfolioCards = [{
     id: 'portfolio-1',
-    img: img,
+    img: img1,
     category: 'branding',
     name: 'Project Caption'
   },
   {
     id: 'portfolio-2',
-    img: img,
+    img: img2,
     category: 'photography',
     name: 'Project Caption'
   },
   {
     id: 'portfolio-3',
-    img: img,
+    img: img3,
     category: 'seo',
     name: 'Project Caption'
   },
   {
     id: 'portfolio-4',
-    img: img,
+    img: img4,
     category: 'branding',
     name: 'Project Caption'
   },
   {
     id: 'portfolio-5',
-    img: img,
+    img: img5,
     category: 'webdevelopment',
     name: 'Project Caption'
   },
   {
     id: 'portfolio-6',
-    img: img,
+    img: img6,
     category: 'seo',
     name: 'Project Caption'
   },
   {
     id: 'portfolio-7',
-    img: img,
+    img: img7,
     category: 'webdevelopment',
     name: 'Project Caption'
   }
