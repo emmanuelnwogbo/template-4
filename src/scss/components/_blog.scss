@@ -192,11 +192,11 @@
     align-self: flex-end;
     @include btnStyling;
     color: $color-primary;
-    padding: .9rem .1rem;
+    padding: 1.4rem .1rem;
     background: $color-btn-black;
     border: none;
     width: 20%;
-    transform: translateY(-5rem);
+    transform: translateY(-5.1rem);
     &:hover {
       cursor: pointer;
       transform: translateY(-5.3rem)

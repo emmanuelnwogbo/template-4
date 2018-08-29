@@ -459,7 +459,7 @@
             <div class="blog__newsletter-formgroup">
               <input type="email" class="blog__newsletter-forminput" placeholder="Email" id="email" required>
             </div>
-            <a href="#" class="blog__newletter-btn">subscribe</a>
+            <button href="#" class="blog__newletter-btn">subscribe</button>
           </form>
         </div>
       </div>
@@ -470,61 +470,11 @@
     <div class="portfolio">
       <div class="portfolio__container">
         <h2 class="portfolio__container-h2">Portfolio</h2>
-        <ul class="portfolio__container-list">
-          <li class="portfolio__container-listitem">all</li>
-          <li class="portfolio__container-listitem">web development</li>
-          <li class="portfolio__container-listitem">branding</li>
-          <li class="portfolio__container-listitem">photography</li>
-          <li class="portfolio__container-listitem">seo</li>
+        <ul class="portfolio__container-list" id="port_btns">
         </ul>
-        <input type="checkbox" class="portfolio__container-checkbox" id="portfolio__container-checkbox-all">
-        <input type="checkbox" class="portfolio__container-checkbox" id="portfolio__container-checkbox-webdev">
-        <input type="checkbox" class="portfolio__container-checkbox" id="portfolio__container-checkbox-branding">
-        <input type="checkbox" class="portfolio__container-checkbox" id="portfolio__container-checkbox-photography">
-        <input type="checkbox" class="portfolio__container-checkbox" id="portfolio__container-checkbox-seo">
-        <div class="portfolio__cards">
-          <div class="portfolio__card portfolio__card-category-webdev">
-            <figure class="portfolio__card-figure">
-              <img src="../imgs/project0.jpg" alt="" class="portfolio__card-img">
-              <p class="portfolio__card-category">Category</p>
-              <p class="portfolio__card-name">Project Caption</p>
-            </figure>
-          </div>
-          <div class="portfolio__card">
-            <figure class="portfolio__card-figure">
-              <img src="../imgs/project1.jpg" alt="" class="portfolio__card-img">
-              <p class="portfolio__card-category">Category</p>
-              <p class="portfolio__card-name">Project Caption</p>
-            </figure>
-          </div>
-          <div class="portfolio__card">
-            <figure class="portfolio__card-figure">
-              <img src="../imgs/project2.jpg" alt="" class="portfolio__card-img">
-              <p class="portfolio__card-category">Category</p>
-              <p class="portfolio__card-name">Project Caption</p>
-            </figure>
-          </div>
-          <div class="portfolio__card portfolio__card-category-webdev">
-            <figure class="portfolio__card-figure">
-              <img src="../imgs/project3.jpg" alt="" class="portfolio__card-img">
-              <p class="portfolio__card-category">Category</p>
-              <p class="portfolio__card-name">Project Caption</p>
-            </figure>
-          </div>
-          <div class="portfolio__card">
-            <figure class="portfolio__card-figure">
-              <img src="../imgs/project4.jpg" alt="" class="portfolio__card-img">
-              <p class="portfolio__card-category">Category</p>
-              <p class="portfolio__card-name">Project Caption</p>
-            </figure>
-          </div>
-          <div class="portfolio__card">
-            <figure class="portfolio__card-figure">
-              <img src="../imgs/project5.jpg" alt="" class="portfolio__card-img">
-              <p class="portfolio__card-category">Category</p>
-              <p class="portfolio__card-name">Project Caption</p>
-            </figure>
-          </div>
+
+        <div class="portfolio__cards" id="port_cards">
+
         </div>
       </div>
     </div>
@@ -591,7 +541,7 @@
               <label for="description" class="contact__form-label"></label>
             </div>
             <div class="contact__form-group">
-              <a href="#" class="contact__form-btn" id="contact__form-btn">send</a>
+              <button href="#" class="contact__form-btn" id="contact__form-btn">send</button>
             </div>
           </form>
         </div>
