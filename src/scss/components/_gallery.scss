@@ -1,0 +1,30 @@
+.gallery {
+  position: fixed;
+  z-index: 9800;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 20, 20, .6);
+  margin: 0 auto;
+  transition: $sec-transition;
+  &__figure {
+    margin: 17vh auto;
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: 60vh;
+    transition: $primary-transition;
+    backface-visibility: hidden;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .2rem;
+    transition: $primary-transition;
+    transform: scale(1.2);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

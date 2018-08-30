@@ -1,3 +1,5 @@
+import Gallery from './gallery';
+
 export default class Switch {
   constructor(topPar, btnsPar, cardsPar) {
     this.topPar = document.getElementById(topPar);
@@ -7,6 +9,8 @@ export default class Switch {
 
   initialize(labels, cards) {
     let markup;
+    let portGallery;
+    const cardsClass = '.portfolio__card';
     labels.forEach(label => {
       markup = `<li class="portfolio__container-listitem" data-itemid=${label}>${label}</li>`;
       this.btnsPar.insertAdjacentHTML(`beforeend`, markup);
@@ -23,8 +27,9 @@ export default class Switch {
       </div>`;
       this.cardsPar.insertAdjacentHTML(`beforeend`, markup);
     });
-
-    this.switcher('.portfolio__container-listitem', '.portfolio__card', cards);
+    portGallery = new Gallery(cardsClass);
+    portGallery.initialize();
+    this.switcher('.portfolio__container-listitem', cardsClass, cards);
   }
 
   switcher(btnClassName, cardClassName, cardsArr) {
@@ -33,6 +38,7 @@ export default class Switch {
     let cards;
     let markup;
     let currentBtn;
+    let portGallery;
 
     function triggerSwitch() {
       cards = document.querySelectorAll(cardClassName);
@@ -43,7 +49,7 @@ export default class Switch {
         while (cardsParent.firstChild) {
           cardsParent.removeChild(cardsParent.firstChild);
         }
-      }, 400);
+      }, 300);
     }
 
     function insertCard(itemid) {
@@ -64,11 +70,13 @@ export default class Switch {
               card.style.transform = `scale(0)`;
               setTimeout(function () {
                 card.style.transform = `scale(1)`;
-              }, 50)
+              }, 30)
             })
           }
         })
-      }, 400);
+        portGallery = new Gallery(cardClassName);
+        portGallery.initialize();
+      }, 300);
     }
 
     btns.forEach(btn => {
@@ -86,6 +94,7 @@ export default class Switch {
           if (cards.length === cardsArr.length) {
             return;
           }
+
           cards.forEach(card => {
             alreadyPresent.push(card.id);
           });
@@ -110,6 +119,8 @@ export default class Switch {
               card.style.transform = `scale(0)`;
               setTimeout(function () {
                 card.style.transform = `scale(1)`;
+                portGallery = new Gallery(`#${card.id}`);
+                portGallery.initialize();
               }, 50);
             }
           })
