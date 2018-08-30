@@ -85,6 +85,24 @@ export default class Switch {
         if (currentBtn === this.dataset.itemid) {
           return;
         }
+        if (currentBtn === 'all' && this.dataset.itemid !== 'all') {
+          currentBtn = this.dataset.itemid
+          cards = document.querySelectorAll(cardClassName);
+          if (cards[0].dataset.itemid === this.dataset.itemid) {
+            cards.forEach(card => {
+              if (card.dataset.itemid !== cards[0].dataset.itemid) {
+                card.style.transform = `scale(0)`;
+                setTimeout(function () {
+                  cardsParent.removeChild(card);
+                }, 300);
+              }
+            });
+            return;
+          }
+          triggerSwitch();
+          insertCard(this.dataset.itemid);
+          return;
+        }
         currentBtn = this.dataset.itemid
         if (this.dataset.itemid === 'all') {
           let markup;
