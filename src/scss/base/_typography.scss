@@ -113,9 +113,13 @@ h5 {
     letter-spacing: 1.5px;
   }
   &__paragraph {
-    @media only screen and (max-width: 998px) {
-      font-size: 120%;
-      letter-spacing: 1px;
+    @media only screen and (max-width: 1024px) {
+      font-size: 140%;
+      letter-spacing: 0px;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 150%;
+      letter-spacing: 0px;
     }
   }
   &__btn,
@@ -216,11 +220,31 @@ h5 {
     }
   }
   &__newsletter-forminput {
-    font-size: 1.2rem;
-    letter-spacing: 2px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 120%;
+    letter-spacing: 1px;
+    @media only screen and (max-width: 1024px) {
+      font-size: 180%;
+      letter-spacing: 1px;
+    }
     &::-webkit-input-placeholder {
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 80%;
+      @media only screen and (max-width: 1024px) {
+        font-size: 100%;
+      }
+    }
+  }
+  &__newletter-btn,
+  &__newletter-btn:link,
+  &__newletter-btn:visited,
+  &__newletter-btn:active {
+    font-size: 100%;
+    font-weight: 700;
+    @media only screen and (max-width: 1024px) {
+      font-weight: 900;
+      font-size: 100%;
     }
   }
 }
@@ -281,19 +305,34 @@ h5 {
     }
   }
   &__form-input {
-    font-size: 1.2rem;
+    font-weight: 700;
+    font-size: 100%;
     letter-spacing: 2px;
+    @media only screen and (max-width: 1024px) {
+      font-size: 120%;
+    }
     &::-webkit-input-placeholder {
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 100%;
+      @media only screen and (max-width: 1024px) {
+        font-size: 120%;
+      }
     }
   }
   &__form-textarea {
-    font-size: 1.2rem;
+    font-weight: 700;
+    font-size: 100%;
     letter-spacing: 2px;
+    @media only screen and (max-width: 1024px) {
+      font-size: 120%;
+    }
     &::-webkit-input-placeholder {
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 100%;
+      letter-spacing: 2px;
+      @media only screen and (max-width: 1024px) {
+        font-size: 120%;
+      }
     }
   }
   &__form-btn,
@@ -301,6 +340,13 @@ h5 {
   &__form-btn:visited,
   &__form-btn:active {
     font-weight: 700;
+    font-size: 100%;
+    @media only screen and (max-width: 1024px) {
+      font-size: 140%;
+    }
+    @media only screen and (max-width: 400px) {
+      font-size: 160%;
+    }
   }
 }
 

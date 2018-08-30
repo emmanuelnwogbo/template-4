@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    @media only screen and (max-width: 415px) {
+    @media only screen and (max-width: 500px) {
       flex-direction: column;
     }
   }
@@ -45,7 +45,7 @@
     @media only screen and (max-width: 555px) {
       padding: .7rem .5rem;
     }
-    @media only screen and (max-width: 415px) {
+    @media only screen and (max-width: 500px) {
       width: 53%;
       padding: none;
     }

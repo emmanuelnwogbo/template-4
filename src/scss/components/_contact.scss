@@ -150,7 +150,7 @@
   &__form-btn:active {
     @include btnStyling;
     color: $color-primary;
-    padding: 1.2rem .1rem;
+    padding: 1rem .1rem;
     background: $color-btn-black;
     border: none;
     margin-right: 1rem;
@@ -158,6 +158,12 @@
     &:hover {
       cursor: pointer;
       transform: translateY(-.2rem);
+    }
+    @media only screen and (max-width: 600px) {
+      width: 30%;
+    }
+    @media only screen and (max-width: 400px) {
+      width: 40%;
     }
   }
 }
