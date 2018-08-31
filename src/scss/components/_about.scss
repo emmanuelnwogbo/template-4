@@ -15,7 +15,7 @@
     width: 60%;
     margin: 0rem auto;
     color: $color-grey-sub;
-    @media only screen and (max-width: 998px) {
+    @media only screen and (max-width: 1160px) {
       width: 100%;
     }
   }
@@ -24,14 +24,15 @@
     margin-top: 1.5rem;
     display: flex;
     justify-content: space-between;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 1160px) {
       flex-direction: column;
     }
   }
   &__bio {
     width: 47%;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 1160px) {
       width: 100%;
+      margin-bottom: 1.5rem;
     }
   }
   &__email {
@@ -64,11 +65,9 @@
       cursor: pointer;
       transform: translateY(-.2rem);
     }
-    @media only screen and (max-width: 800px) {
-      width: 15%;
-    }
-    @media only screen and (max-width: 555px) {
-      width: 20%;
+    @media only screen and (max-width: 1160px) {
+      margin-top: .4rem;
+      width: 19%;
     }
   }
   &__skills {
@@ -76,9 +75,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 1160px) {
       width: 100%;
-      margin: 3rem 0;
     }
   }
   &__skill {
@@ -97,17 +95,11 @@
   &__skill-letters {
     width: 50%;
     transform: translateY(-2rem);
-    @media only screen and (max-width: 998px) {
-      transform: translateY(-3rem)
-    }
   }
   &__skill-numbers {
     width: 20%;
     transform: translateY(-2rem);
     text-align: end;
-    @media only screen and (max-width: 998px) {
-      transform: translateY(-3rem);
-    }
   }
 }
 

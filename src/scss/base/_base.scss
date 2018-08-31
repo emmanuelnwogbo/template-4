@@ -7,43 +7,7 @@
 }
 
 html {
-  font-size: 95%;
-  @media only screen and (max-width: 1400px) {
-    font-size: 83%;
-  }
-  @media only screen and (max-width: 1291px) {
-    font-size: 70%;
-  }
-  @media only screen and (max-width: 1108px) {
-    font-size: 60%;
-  }
-  @media only screen and (max-width: 900px) {
-    font-size: 50%;
-  }
-  @media only screen and (max-width: 824px) {
-    font-size: 45%;
-  }
-  @media only screen and (max-width: 800px) {
-    font-size: 60%;
-  }
-  @media only screen and (max-width: 650px) {
-    font-size: 55%;
-  }
-  @media only screen and (max-width: 600px) {
-    font-size: 50%;
-  }
-  @media only screen and (max-width: 560px) {
-    font-size: 40%;
-  }
-  @media only screen and (max-width: 539px) {
-    font-size: 35%;
-  }
-  @media only screen and (max-width: 430px) {
-    font-size: 40%;
-  }
-  @media only screen and (max-width: 400px) {
-    font-size: 35%;
-  }
+  font-size: 103%;
 }
 
 body {
@@ -52,9 +16,6 @@ body {
   text-rendering: optimizeLegibility;
   background: #E8EAF6;
   overflow-x: hidden; //padding: 1rem;
-  @media only screen and (max-width: 1024px) {
-    padding: 0;
-  }
 }
 
 ::selection {

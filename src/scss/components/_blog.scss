@@ -15,8 +15,11 @@
     width: 60%;
     margin: 0rem auto;
     color: $color-grey-sub;
-    @media only screen and (max-width: 998px) {
-      width: 100%
+    @media only screen and (max-width: 1160px) {
+      width: 100%;
+    }
+    @media only screen and (max-width: 1000px) {
+      width: 80%;
     }
   }
   &__container-content {
@@ -26,8 +29,11 @@
     flex-wrap: wrap;
     align-content: baseline;
     justify-content: space-evenly;
-    @media only screen and (max-width: 998px) {
+    @media only screen and (max-width: 1160px) {
       justify-content: space-between;
+    }
+    @media only screen and (max-width: 1000px) {
+      justify-content: center;
     }
   }
   &__card {
@@ -41,17 +47,16 @@
     &:hover {
       cursor: pointer;
     }
-    @media only screen and (max-width: 998px) {
+    @media only screen and (max-width: 1160px) {
       flex-basis: 48%;
-      margin: 1.5rem 0;
     }
-    @media only screen and (max-width: 800px) {
-      flex-basis: 100%;
+    @media only screen and (max-width: 1000px) {
+      flex-basis: 65%;
     }
   }
   &__card-figure {
     overflow: hidden;
-    height: 30vh;
+    height: 28vh;
     width: 100%;
     @media only screen and (max-width: 1600px) {
       height: 25vh;
@@ -59,14 +64,11 @@
     @media only screen and (max-width: 1400px) {
       height: 20vh;
     }
-    @media only screen and (max-width: 1150px) {
-      height: 15vh;
-    }
-    @media only screen and (max-width: 998px) {
-      height: 23vh;
-    }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 1160px) {
       height: 30vh;
+    }
+    @media only screen and (max-width: 1000px) {
+      height: 45vh;
     }
   }
   &__card-text {

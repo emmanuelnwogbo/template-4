@@ -18,13 +18,16 @@
       width: 50%;
       height: 3%;
     }
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+    }
   }
   &__container-list {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 700px) {
       flex-direction: column;
     }
   }
@@ -42,12 +45,9 @@
     display: inline-block;
     box-shadow: $box-shadow;
     transition: $primary-transition;
-    @media only screen and (max-width: 555px) {
-      padding: .7rem .5rem;
-    }
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 700px) {
       width: 53%;
-      padding: none;
+      padding: .7rem .5rem;
     }
     &:hover {
       cursor: pointer;
@@ -94,6 +94,12 @@
     @media only screen and (max-width: 1291px) {
       color: $color-black;
     }
+    @media only screen and (max-width: 1160px) {
+      flex-basis: 46%;
+    }
+    @media only screen and (max-width: 967px) {
+      flex-basis: 45%
+    }
     @media only screen and (max-width: 800px) {
       flex-basis: 100%;
     }
@@ -108,11 +114,8 @@
     @media only screen and (max-width: 1600px) {
       height: 20vh;
     }
-    @media only screen and (max-width: 1150px) {
-      height: 15vh;
-    }
-    @media only screen and (max-width: 800px) {
-      height: 35vh;
+    @media only screen and (max-width: 1160px) {
+      height: 30vh;
     }
     &::before {
       @include beforAfter ($color-portfolio-card-pseudoelement);

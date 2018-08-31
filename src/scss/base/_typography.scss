@@ -9,12 +9,6 @@ h2 {
   font-size: 270%;
   font-weight: 900;
   text-align: center;
-  @media only screen and (max-width: 998px) {
-    font-size: 400%;
-  }
-  @media only screen and (max-width: 800px) {
-    font-size: 461%
-  }
 }
 
 h3 {
@@ -25,20 +19,11 @@ h3 {
 h4 {
   font-size: 150%;
   font-weight: 700;
-  @media only screen and (max-width: 998px) {
-    font-size: 218%;
-  }
-  @media only screen and (max-width: 800px) {
-    font-size: 275%
-  }
 }
 
 h5 {
   font-size: 115%;
   font-weight: 400;
-  @media only screen and (max-width: 998px) {
-    font-size: 200%;
-  }
 }
 
 .container {
@@ -50,9 +35,6 @@ h5 {
     font-size: 186%;
     text-transform: uppercase;
     text-decoration: none;
-    @media only screen and (max-width: 900px) {
-      font-size: 265%;
-    }
   }
 }
 
@@ -60,39 +42,8 @@ h5 {
   &__title {
     font-size: 200%;
     font-weight: 700;
-    @media only screen and (max-width: 998px) {
-      font-size: 350%;
-    }
   }
-  &__intro {
-    @media only screen and (max-width: 1400px) {
-      font-size: 137%;
-    }
-    @media only screen and (max-width: 1291px) {
-      font-size: 137%;
-    }
-    @media only screen and (max-width: 1108px) {
-      font-size: 170%;
-    }
-    @media only screen and (max-width: 800px) {
-      font-size: 136%;
-    }
-    @media only screen and (max-width: 725px) {
-      font-size: 120%;
-    }
-    @media only screen and (max-width: 555px) {
-      font-size: 152%;
-    }
-    @media only screen and (max-width: 470px) {
-      font-size: 117%;
-    }
-    @media only screen and (max-width: 417px) {
-      font-size: 110%;
-    }
-    @media only screen and (max-width: 395px) {
-      font-size: 90%;
-    }
-  }
+  &__intro {}
   &__intro-name {
     letter-spacing: .1rem;
     font-size: 400%;
@@ -112,16 +63,7 @@ h5 {
     font-size: 118%;
     letter-spacing: 1.5px;
   }
-  &__paragraph {
-    @media only screen and (max-width: 1024px) {
-      font-size: 140%;
-      letter-spacing: 0px;
-    }
-    @media only screen and (max-width: 800px) {
-      font-size: 150%;
-      letter-spacing: 0px;
-    }
-  }
+  &__paragraph {}
   &__btn,
   &__btn:link,
   &__btn:visited,
@@ -132,18 +74,12 @@ h5 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 90%;
-    @media only screen and (max-width: 998px) {
-      font-size: 139%;
-    }
   }
 }
 
 .experience {
   &__itempara {
     font-size: 110%;
-    @media only screen and (max-width: 998px) {
-      font-size: 200%;
-    }
   }
 }
 
@@ -152,58 +88,25 @@ h5 {
     font-size: 126%;
     text-transform: uppercase;
     letter-spacing: 1px;
-    @media only screen and (max-width: 998px) {
-      font-size: 200%;
-    }
-    @media only screen and (max-width: 800px) {
-      font-size: 220%
-    }
   }
   &__card-para {
     font-weight: 400;
     font-size: 110%;
-    @media only screen and (max-width: 998px) {
-      font-size: 200%;
-    }
-    @media only screen and (max-width: 800px) {
-      font-size: 250%
-    }
   }
 }
 
 .clients {
   &__card-para {
     letter-spacing: 2px;
-    @media only screen and (max-width: 998px) {
-      font-size: 170%;
-    }
-    @media only screen and (max-width: 800px) {
-      font-size: 230%
-    }
   }
 }
 
 .blog {
   &__card-details {
     font-size: 80%;
-    @media only screen and (max-width: 1024px) {
-      font-size: 120%;
-    }
-    @media only screen and (max-width: 998px) {
-      font-size: 160%;
-    }
   }
   &__card-preview {
-    font-size: 100%;
-    @media only screen and (max-width: 1024px) {
-      font-size: 130%
-    }
-    @media only screen and (max-width: 998px) {
-      font-size: 210%;
-    }
-    @media only screen and (max-width: 800px) {
-      font-size: 250%
-    }
+    font-size: 120%;
   }
   &__card-btn,
   &__card-btn:link,
@@ -215,25 +118,15 @@ h5 {
     font-size: 85%;
     letter-spacing: .1rem;
     text-transform: uppercase;
-    @media only screen and (max-width: 998px) {
-      font-size: 200%;
-    }
   }
   &__newsletter-forminput {
     font-family: inherit;
     font-weight: 700;
     font-size: 120%;
     letter-spacing: 1px;
-    @media only screen and (max-width: 1024px) {
-      font-size: 180%;
-      letter-spacing: 1px;
-    }
     &::-webkit-input-placeholder {
       font-weight: 700;
       font-size: 80%;
-      @media only screen and (max-width: 1024px) {
-        font-size: 100%;
-      }
     }
   }
   &__newletter-btn,
@@ -242,10 +135,6 @@ h5 {
   &__newletter-btn:active {
     font-size: 100%;
     font-weight: 700;
-    @media only screen and (max-width: 1024px) {
-      font-weight: 900;
-      font-size: 100%;
-    }
   }
 }
 
@@ -256,30 +145,18 @@ h5 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-    @media only screen and (max-width: 998px) {
-      font-size: 100%;
-    }
-    @media only screen and (max-width: 415px) {
-      font-size: 170%;
-    }
   }
   &__card-category {
     text-align: center;
     font-weight: 400;
     font-size: 110%;
     letter-spacing: 1px;
-    @media only screen and (max-width: 998px) {
-      font-size: 180%;
-    }
   }
   &__card-name {
     text-align: center;
     font-weight: 700;
     font-size: 150%;
     letter-spacing: 2px;
-    @media only screen and (max-width: 998px) {
-      font-size: 200%;
-    }
   }
 }
 
@@ -289,9 +166,6 @@ h5 {
   }
   &__address {
     text-align: center;
-    @media only screen and (max-width: 998px) {
-      font-size: 140%;
-    }
   }
   &__address-h4 {
     font-weight: 900;
@@ -308,31 +182,19 @@ h5 {
     font-weight: 700;
     font-size: 100%;
     letter-spacing: 2px;
-    @media only screen and (max-width: 1024px) {
-      font-size: 120%;
-    }
     &::-webkit-input-placeholder {
       font-weight: 700;
       font-size: 100%;
-      @media only screen and (max-width: 1024px) {
-        font-size: 120%;
-      }
     }
   }
   &__form-textarea {
     font-weight: 700;
     font-size: 100%;
     letter-spacing: 2px;
-    @media only screen and (max-width: 1024px) {
-      font-size: 120%;
-    }
     &::-webkit-input-placeholder {
       font-weight: 700;
       font-size: 100%;
       letter-spacing: 2px;
-      @media only screen and (max-width: 1024px) {
-        font-size: 120%;
-      }
     }
   }
   &__form-btn,
@@ -341,12 +203,6 @@ h5 {
   &__form-btn:active {
     font-weight: 700;
     font-size: 100%;
-    @media only screen and (max-width: 1024px) {
-      font-size: 140%;
-    }
-    @media only screen and (max-width: 400px) {
-      font-size: 160%;
-    }
   }
 }
 
@@ -357,19 +213,10 @@ h5 {
   &__container-h4 {
     font-size: 180%;
     letter-spacing: 1px;
-    @media only screen and (max-width: 998px) {
-      font-size: 250%;
-    }
   }
   &-licence {
     font-size: 120%;
     font-weight: 700;
     letter-spacing: 3px;
-    @media only screen and (max-width: 998px) {
-      font-size: 170%;
-    }
-    @media only screen and (max-width: 555px) {
-      font-size: 120%;
-    }
   }
 }
